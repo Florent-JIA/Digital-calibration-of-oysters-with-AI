@@ -24,13 +24,13 @@ If you are insterested in our pictures of oysters and their calculation results,
 
 For more details, please consult the [Rembg](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/image%20processing/Rembg.py/) file.
 
-2. Then, [GetCharacter](/) program is used to calculate **Length**, **Width**, **Height**, **SpaceC** and **SpaceD**.
+2. Then, [GetCharacter](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/image%20processing/GetCharacter.py/) program is used to calculate **Length**, **Width**, **Height**, **SpaceC** and **SpaceD**.
 
-3. Next, [GetVariance](/) program is used to calculate **VA** and **VB**.
+3. Next, [GetVariance](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/image%20processing/GetVariance.py/) program is used to calculate **VA** and **VB**.
 
 ## Neural network
 In view of the small number of variables and the classification task that isn't very complicated, we only used a simple neural network model that is composed of 2 fully connected layers with 50 neurons on each layer.
 
-For more details, please consult the [MLP](/) program.
+For more details, please consult the [MLP](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/network/MLP.py/) program.
 
 ## Application
