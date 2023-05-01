@@ -33,4 +33,6 @@ In view of the small number of variables and the classification task that isn't 
 
 For more details, please consult the [MLP](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/network/MLP.py/) program.
 
+## Training
+
 ## Application
