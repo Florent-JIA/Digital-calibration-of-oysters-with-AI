@@ -18,3 +18,6 @@ According to the values of these 7 variables, the quality of the oyster will be 
 The client provided us with photos of 136 oysters, including top and side views (which means a total of 272 photos), and the score for each oyster. We calculated the values of the above 7 variables for each oyster through image processing, which will be the input of our neural network.
 
 If you are insterested in our pictures of oysters and their calculation results, please consult the [dataset](/) folder.
+
+## Image processing
+1. In order to calculate the values of variables more accurately, we have fisrtly transformed the background of the oyster photos to white. We removed the background of oyster pictures and then pasted oysters on another white background.
