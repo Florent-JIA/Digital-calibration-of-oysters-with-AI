@@ -14,8 +14,12 @@ After discussing with our client, we determined the following 7 variables as the
 
 According to the values of these 7 variables, the quality of the oyster will be scored 0-10. A score from 8 to 10 is considered as good. A score from 4 to 7 is considered as moderate. A socre from 0 to 3 is considered as bad.
 
+The goal of this project is to classify oysters' scores (output) based on these 7 variables (input).
+
 ## Dataset
 The client provided us with photos of 136 oysters, including top and side views (which means a total of 272 photos), and the score for each oyster. We calculated the values of the above 7 variables for each oyster through image processing, which will be the input of our neural network.
+
+[MyDataSet](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/dataset/MyDataSet.py/) is used to generate the dataset for the training of the network model, including specifying input and output, and dividing training set and test set.
 
 If you are insterested in our pictures of oysters and their calculation results, please consult the [dataset](/) folder.
 
@@ -34,5 +38,9 @@ In view of the small number of variables and the classification task that isn't 
 For more details, please consult the [MLP](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/network/MLP.py/) program.
 
 ## Training
+run [train_mlp](/) to train the above network model.
 
 ## Application
+After training, we saved the parameters of the network. In application (test), the photo of an oyster is processed in the same way as in training, which means transforming the background to white and calculating the values of the 7 variables. Then, the neural network classifies the quality score of the oyster.
+
+run [Test_MLP](/) to test and use this neural network.
