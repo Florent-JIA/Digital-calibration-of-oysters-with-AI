@@ -40,7 +40,7 @@ In view of the small number of variables and the classification task that isn't 
 For more details, please consult the [MLP](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/network/MLP.py/) program.
 
 ## Training
-To run [train](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/train/train.py/) to train the above network model, it;s firstly necessay to set hyper parameters by modifying Options class.
+To run [train](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/train/train.py/) to train the above network model, it's firstly necessay to set hyper parameters by modifying Options class.
 
 ## Application
 After training, we saved the parameters of the network. In application (test), the photo of an oyster is processed in the same way as in training, which means transforming the background to white and calculating values of the 7 variables. Then, the neural network classifies the quality label of the oyster.
