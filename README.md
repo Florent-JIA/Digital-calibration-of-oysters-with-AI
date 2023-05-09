@@ -31,8 +31,8 @@ If you are insterested in our pictures of oysters and their calculation results,
 2. The first class (RemoveBackground) in [MyPreprocessing](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/image_processing/MyPreprocessing.py/) is used to convert the background of images to white.
 3. The second class (Calculation) in [MyPreprocessing](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/image_processing/MyPreprocessing.py/) is used to calculate values of Length, Width, Height, SpaceC, SpaceD, VA and VB.
 4. In particular, the calculation of VA and VB uses the Fourier transform. The Fourier transform converts an image into a frequency matrix. Those parts whose frequency is low are eliminated. Those parts whose frequency is strong is kept, which are just the parts in relief of the oyster. By an inverse transformation, the new images that keep only the parts in relief of oysters are gotten.
-<img src="https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/imgs/FFT2.png" width="250"/><img src="https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/imgs/FFT1.png" width="250"/>
-**(a) the parts in relief on the top view of an osyter            (b) the parts in relief on the side view of an osyter**
+<img src="https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/imgs/FFT2.png" width="300"/><img src="https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/imgs/FFT1.png" width="300"/>
+<br>**(a) the parts in relief on the top view of an osyter            (b) the parts in relief on the side view of an osyter**
 
 ## Neural network
 In view of the small number of variables and the classification task that isn't very complicated, we only used a simple neural network model that is composed of 2 fully connected layers with 50 neurons on each layer.
