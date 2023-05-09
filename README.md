@@ -12,7 +12,7 @@ After discussing with our client, we determined the following 7 variables as the
 
 **VB** has the same meaning as VA, but VB is observed from the side of the oyster.
 
-<img src="https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/imgs/001d.png"/><img src="https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/imgs/001d.png"/>
+<img src="https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/imgs/001d.png"><img src="https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/imgs/001d.png">
 
 According to the values of these 7 variables, the quality of the oyster will be scored 0-10. A score from 8 to 10 is considered as good. A score from 4 to 7 is considered as moderate. A socre from 0 to 3 is considered as bad.
 
