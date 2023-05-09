@@ -43,6 +43,6 @@ For more details, please consult the [MLP](https://github.com/Weizhe-JIA/3.Digit
 To run [train](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/train/train.py/) to train the above network model, it's firstly necessay to set hyper parameters by modifying Options class.
 
 ## Application
-After training, we saved the parameters of the network. In application (test), the photo of an oyster is processed in the same way as in training, which means transforming the background to white and calculating values of the 7 variables. Then, the neural network classifies the quality label of the oyster.
+After training, we saved the parameters of the network. In application (test), the photos of an oyster is processed in the same way as in training, which means transforming the background to white and calculating values of the 7 variables. Then, the neural network classifies the quality label of the oyster.
 
 run [application](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/test/application.py/) to test and use this neural network.
