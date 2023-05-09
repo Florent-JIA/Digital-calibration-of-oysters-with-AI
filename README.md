@@ -27,13 +27,12 @@ The client provided us with photos of 136 oysters, including top and side views 
 If you are insterested in our pictures of oysters and their calculation results, please consult the [dataset](/) folder.
 
 ## Image processing
-1. In order to calculate the values of variables more accurately, we have fisrtly transformed the background of the oyster photos to white. We removed the background of oyster pictures and then pasted oysters on another white background.
-
-For more details, please consult the [Rembg](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/image%20processing/Rembg.py/) file.
-
-2. Then, [GetCharacter](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/image%20processing/GetCharacter.py/) program is used to calculate **Length**, **Width**, **Height**, **SpaceC** and **SpaceD**.
-
-3. Next, [GetVariance](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/image%20processing/GetVariance.py/) program is used to calculate **VA** and **VB**.
+1. The pictures provided by our client are all in .jpg format. Many functions in the following programs require images in .png format. So, we created the [to_png](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/image_processing/to_png.py/) program to convert all images to .png format.
+2. The first class (RemoveBackground) in [MyPreprocessing](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/image_processing/MyPreprocessing.py/) is used to convert the background of images to white.
+3. The second class (Calculation) in [MyPreprocessing](https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/image_processing/MyPreprocessing.py/) is used to calculate values of Length, Width, Height, SpaceC, SpaceD, VA and VB.
+4. In particular, the calculation of VA and VB uses the Fourier transform. The Fourier transform converts an image into a frequency matrix. Those parts whose frequency is low are eliminated. Those parts whose frequency is strong is kept, which are just the parts in relief of the oyster. By an inverse transformation, the new images that keep only the parts in relief of oysters are gotten.
+<img src="https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/imgs/FFT2.png" width="500"/><img src="https://github.com/Weizhe-JIA/3.Digital-calibration-of-oysters-with-AI/blob/main/imgs/FFT1.png" width="500"/>
+**(a) the parts in relief on the top view of an osyter            (b) the parts in relief on the side view of an osyter**
 
 ## Neural network
 In view of the small number of variables and the classification task that isn't very complicated, we only used a simple neural network model that is composed of 2 fully connected layers with 50 neurons on each layer.
