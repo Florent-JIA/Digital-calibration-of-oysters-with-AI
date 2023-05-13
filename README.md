@@ -1,5 +1,5 @@
 # Digital-calibration-of-oysters-with-AI
-This is an entreprise project, the purpose of which is to develop a program using deep learning methods for our client so that the quality category of oysters can be automatically identified.
+This is an entreprise project, the purpose of which is to develop a program using deep learning methods for our client so that the quality category of oysters can be automatically identified..
 
 ## Introduction
 After discussing with our client, we determined the following 7 variables as the criteria for judging the quality of oysters: **Length**, **Width**, **Height**, **SpaceC**, **SpaceD**, **VA** and **VB**.
